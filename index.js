@@ -75,5 +75,8 @@ app.delete("/api/admin/:type/:id", auth("admin"), async (req, res) => {
   res.status(204).end();
 });
 
-await mongoose.connect(env.MONGO_URI || "mongodb://127.0.0.1:27017/learner_showcase");
+await mongoose.connect(
+  env.MONGO_URI ||
+    "mongodb+srv://gayathrim_db_user:root@cluster0.r7jhteo.mongodb.net/learner_showcase",
+);
 app.listen(env.PORT || 5000, () => console.log("API running"));
