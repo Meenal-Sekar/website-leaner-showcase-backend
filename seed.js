@@ -4,7 +4,7 @@ import { Project, Testimonial, Placement, Achievement } from "./models.js";
 
 await mongoose.connect(
   process.env.MONGO_URI ||
-    "mongodb+srv://gayathrim_db_user:root@cluster0.r7jhteo.mongodb.net/learner_showcase",
+    "MONGO_URL=mongodb+srv://meenal-sekar:VishuVishu1805@cluster0.vskqmqg.mongodb.net/learner_showcase?appName=Cluster0",
 );
 await Promise.all(
   [Project, Testimonial, Placement, Achievement].map((m) => m.deleteMany({})),
