@@ -3,8 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch index.js",
-    "start": "node index.js",
-    "seed": "node seed.js"
+        "seed": "node seed.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
