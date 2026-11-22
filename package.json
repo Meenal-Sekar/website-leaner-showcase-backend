@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch index.js",
+    "start": "node index.js",
     "seed": "node seed.js"
   },
   "dependencies": {
