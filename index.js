@@ -77,6 +77,6 @@ app.delete("/api/admin/:type/:id", auth("admin"), async (req, res) => {
 
 await mongoose.connect(
   env.MONGO_URI ||
-    "MONGO_URL=mongodb+srv://meenal-sekar:VishuVishu1805@cluster0.vskqmqg.mongodb.net/learner_showcase?appName=Cluster0",
+    "mongodb+srv://gayathrim_db_user:root@cluster0.r7jhteo.mongodb.net/learner_showcase",
 );
 app.listen(env.PORT || 5000, () => console.log("API running"));
